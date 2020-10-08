@@ -1,4 +1,4 @@
 # htmltest
-<h2>v1.1.1</h2>
-<h3>htmltest is now live with github! i have set this repository to public and it is now on github pages! go see it now at <b><i>jwklong.github.io/htmltest!</i></b></h3><br>
-commit if u want idk
+<h2>v1.2</h2>
+<h3>wow there new secret! find it to be epic and DONT search the files for it or u will have bad luck</h3>
+<h6><i>i like spoons - jwklong</i></h6>
