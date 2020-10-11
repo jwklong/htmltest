@@ -25,6 +25,8 @@ function OnClickMultiplier(amount, cost, requires) {
 function OnClickRebirth(amount, cost) {
     if (cost <= multiplier) {
         rebirth = rebirth + amount;
+        multiplier = 0
+        money = 0
         document.getElementById("rebirthCount").innerHTML = rebirth;
         document.getElementById("multiplierCount").innerHTML = multiplier;
         document.getElementById("moneyCount").innerHTML = money;

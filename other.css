@@ -1,6 +1,6 @@
 ﻿body {
     font-family: Raleway;
-    background-color: #ff4627;
+    background-color: #2BADFF;
     color: white;
 }
 
@@ -19,28 +19,7 @@ img {
     padding: 5px 5px 5px 5px;
 }
 
-#money {
-    background-color: lime;
-    padding: 5px 5px 5px 5px;
-    margin: 0px 0px 0px 0px;
-    border: 2px solid green;
-}
-
-#multiplier {
-    background-color: red;
-    padding: 5px 5px 5px 5px;
-    margin: 0px 0px 0px 0px;
-    border: 2px solid maroon;
-}
-
-#rebirth {
-    background-color: blue;
-    padding: 5px 5px 5px 5px;
-    margin: 0px 0px 0px 0px;
-    border: 2px solid darkblue;
-}
-
-a {
+#link {
     border: 5px solid white;
     margin: 5px 5px 5px 5px;
     padding: 5px 5px 5px 5px;
