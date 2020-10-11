@@ -22,7 +22,7 @@ function OnClickMultiplier(amount, cost, requires) {
     }
 }
 
-function OnClickMoney(amount, cost) {
+function OnClickRebirth(amount, cost) {
     if (cost <= multiplier) {
         rebirth = rebirth + amount;
         document.getElementById("rebirthCount").innerHTML = rebirth;
