@@ -3,11 +3,14 @@
 let money = 0;
 let multiplier = 0;
 let rebirth = 0;
+let ultarebirth = 0;
 
-function OnClickMoney(amount, requires) {
-    if (requires <= multiplier) {
-        money = money + amount * (multiplier + 1);
-        document.getElementById("moneyCount").innerHTML = money;
+function OnClickMoney(amount, requires, requires2) {
+    if (requires2 <= rebirth) {
+        if (requires <= multiplier) {
+            money = money + amount * (multiplier + 1);
+            document.getElementById("moneyCount").innerHTML = money;
+        }
     }
 }
 
