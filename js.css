@@ -16,41 +16,41 @@ img {
     margin-bottom: 5px;
     width: 50%;
     border: 5px solid white;
-    padding: 5px 5px 5px 5px;
+    padding: 5px;
 }
 
 #money {
     background-color: lime;
-    padding: 5px 5px 5px 5px;
-    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    margin: 0px;
     border: 2px solid green;
 }
 
 #multiplier {
     background-color: red;
-    padding: 5px 5px 5px 5px;
-    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    margin: 0px;
     border: 2px solid maroon;
 }
 
 #rebirth {
     background-color: blue;
-    padding: 5px 5px 5px 5px;
-    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    margin: 0px;
     border: 2px solid darkblue;
 }
 
 #ureb {
     background-color: hotpink;
-    padding: 5px 5px 5px 5px;
-    margin: 0px 0px 0px 0px;
+    padding: 5px;
+    margin: 0px;
     border: 2px solid deeppink;
 }
 
 a {
     border: 5px solid white;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    margin: 5px;
+    padding: 5px;
 }
 
 a:link {

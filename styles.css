@@ -16,13 +16,13 @@ img {
     margin-bottom: 5px;
     width: 50%;
     border: 5px solid white;
-    padding: 5px 5px 5px 5px;
+    padding: 5px;
 }
 
 a {
     border: 5px solid white;
-    margin: 5px 5px 5px 5px;
-    padding: 5px 5px 5px 5px;
+    margin: 5px;
+    padding: 5px;
 }
 
 a:link {
