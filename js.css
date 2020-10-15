@@ -22,28 +22,24 @@ img {
 #money {
     background-color: lime;
     padding: 5px;
-    margin: 0px;
     border: 2px solid green;
 }
 
 #multiplier {
     background-color: red;
     padding: 5px;
-    margin: 0px;
     border: 2px solid maroon;
 }
 
 #rebirth {
     background-color: blue;
     padding: 5px;
-    margin: 0px;
     border: 2px solid darkblue;
 }
 
 #ureb {
     background-color: hotpink;
     padding: 5px;
-    margin: 0px;
     border: 2px solid deeppink;
 }
 
