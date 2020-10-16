@@ -4,6 +4,10 @@ let money = 0;
 let multiplier = 0;
 let rebirth = 0;
 let ultarebirth = 0;
+OnClickMoney(0, 0, 0)
+OnClickMultiplier(0, 0, 0)
+OnClickRebirth(0, 0, 0)
+OnClickUltra(0, 0)
 
 function OnClickMoney(amount, requires, requires2) {
     if (requires2 <= rebirth) {
@@ -25,11 +29,26 @@ function OnClickMultiplier(amount, cost, requires) {
     }
 }
 
-function OnClickRebirth(amount, cost) {
-    if (cost <= multiplier) {
-        rebirth = rebirth + amount;
+function OnClickRebirth(amount, cost, requires) {
+    if (requires <= ultrarebirth) {
+        if (cost <= multiplier) {
+            rebirth = rebirth + amount * ((ultrarebirth * 2) + 1)
+            multiplier = 0
+            money = 0
+            document.getElementById("rebirthCount").innerHTML = rebirth;
+            document.getElementById("multiplierCount").innerHTML = multiplier;
+            document.getElementById("moneyCount").innerHTML = money;
+        }
+    }
+}
+
+function OnClickUltra(amount, cost) {
+    if (cost <= rebirth) {
+        ultrarebirth = ultrarebirth + amount;
+        rebirth = 0
         multiplier = 0
         money = 0
+        document.getElementById("ultraCount").innerHTML = ultrarebirth;
         document.getElementById("rebirthCount").innerHTML = rebirth;
         document.getElementById("multiplierCount").innerHTML = multiplier;
         document.getElementById("moneyCount").innerHTML = money;
