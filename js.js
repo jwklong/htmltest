@@ -3,7 +3,7 @@
 let money = 0;
 let multiplier = 0;
 let rebirth = 0;
-let ultarebirth = 0;
+let ultrarebirth = 0;
 OnClickMoney(0, 0, 0)
 OnClickMultiplier(0, 0, 0)
 OnClickRebirth(0, 0, 0)
