@@ -8,9 +8,6 @@ h1, h2, h3, h4, p {
     text-align: center;
 }
 
-img {
-
-}
 
 #img {
     display: block;
@@ -46,5 +43,5 @@ a:active {
 }
 
 #nonlink {
-    border: 0px solid white;
+    border: 1px solid #2BADFF;
 }
