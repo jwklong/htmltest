@@ -15,7 +15,7 @@ img {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 50%;
-    border: 5px solid white;
+    border: 5px solid #800000;
     padding: 5px;
 }
 
@@ -49,10 +49,23 @@ img {
 #buttons {
     background-color: #500000;
     padding: 5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#index {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 5px solid #800000;
+    background-color: #aa2915
 }
 
 a {
-    border: 5px solid white;
+    border: 5px solid #800000;
     padding: 5px;
 }
 
