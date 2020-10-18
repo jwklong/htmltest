@@ -45,7 +45,7 @@ function OnClickRebirth(amount, cost, requires) {
 
 function OnClickUltra(amount, cost) {
     if (cost <= rebirth) {
-        ultrarebirth = ultrarebirth + amount ((prestige * 3) + 1);
+        ultrarebirth = ultrarebirth + amount * ((prestige * 3) + 1);
         rebirth = 0
         multiplier = 0
         money = 0
