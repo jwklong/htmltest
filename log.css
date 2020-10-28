@@ -19,7 +19,8 @@ img {
 }
 
 a {
-    border: 5px solid lime;
+    border-left: 5px solid lime;
+    border-right: 5px solid lime;
     margin: 5px;
     padding: 5px;
 }
