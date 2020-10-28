@@ -64,6 +64,11 @@ img {
     background-color: #aa2915
 }
 
+#indexborder {
+    margin: 5px;
+    padding: 10px;
+}
+
 a {
     border: 5px solid #800000;
     padding: 5px;
