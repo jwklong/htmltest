@@ -46,6 +46,14 @@ img {
     margin: 1px;
     border: 2px solid deeppink;
 }
+
+#prestige {
+    background-color: #ffa600;
+    padding: 5px;
+    margin: 1px;
+    border: 2px solid #ce8600;
+}
+
 #buttons {
     background-color: #500000;
     padding: 5px;
