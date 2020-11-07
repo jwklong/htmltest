@@ -99,9 +99,7 @@ a:active {
     color: white;
 }
 
-#prestigeReward {
-    border: 0px;
-    margin: 0px;
-    padding: 0px;
+#nonlink {
+    border: 1px solid #ff4627;
 }
 
