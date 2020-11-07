@@ -12,9 +12,11 @@ OnClickRebirth(0, 0, 0)
 OnClickUltra(0, 0, 0)
 OnClickPrestige(0, 0)
 
-while (true) {
-    if (prestige >= 1) {
-        document.getElementById("prestigeReward").innerHTML = "wow u got a prestige! nice";
+window.setTimeout(findPrestige(), 250)
+
+function findPrestige() {
+    if (prestige = 1) {
+        document.getElementById("prestigeReward").innerHTML = "wow u got a prestige! cool"
     }
 }
 

@@ -98,3 +98,10 @@ a:hover {
 a:active {
     color: white;
 }
+
+#prestigeReward {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+}
+
