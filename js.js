@@ -5,11 +5,18 @@ let multiplier = 0;
 let rebirth = 0;
 let ultrarebirth = 0;
 let prestige = 0;
+
 OnClickMoney(0, 0, 0)
 OnClickMultiplier(0, 0, 0)
 OnClickRebirth(0, 0, 0)
 OnClickUltra(0, 0, 0)
 OnClickPrestige(0, 0)
+
+while (true) {
+    if (prestige >= 1) {
+        document.getElementById("prestigeReward").innerHTML = "wow u got a prestige! nice";
+    }
+}
 
 function OnClickMoney(amount, requires, requires2) {
     if (requires2 <= rebirth) {
