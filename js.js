@@ -6,6 +6,7 @@ let rebirth = 0;
 let ultrarebirth = 0;
 let prestige = 0;
 
+ResetStats()
 OnClickMoney(0, 0, 0)
 OnClickMultiplier(0, 0, 0)
 OnClickRebirth(0, 0, 0)
