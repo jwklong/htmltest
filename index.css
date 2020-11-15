@@ -16,6 +16,7 @@ h1, h2, h3, h4, p {
     margin-top: 5px;
     margin-bottom: 5px;
     width: 50%;
+    border-radius: 10px;
     border: 5px solid #2082bf;
     padding: 5px;
 }
