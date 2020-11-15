@@ -12,6 +12,19 @@ OnClickRebirth(0, 0, 0)
 OnClickUltra(0, 0, 0)
 OnClickPrestige(0, 0)
 
+function ResetStats() {
+    money = 0;
+    multiplier = 0;
+    rebirth = 0;
+    ultrarebirth = 0;
+    prestige = 0;
+    document.getElementById("moneyCount").innerHTML = money;
+    document.getElementById("multiplierCount").innerHTML = multiplier;
+    document.getElementById("rebirthCount").innerHTML = rebirth;
+    document.getElementById("ultraCount").innerHTML = ultrarebirth;
+    document.getElementById("prestigeCount").innerHTML = prestige;
+}
+
 function OnClickMoney(amount, requires, requires2) {
     if (requires2 <= rebirth) {
         if (requires <= multiplier) {
