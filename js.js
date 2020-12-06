@@ -5,6 +5,7 @@ let multiplier = 0;
 let rebirth = 0;
 let ultrarebirth = 0;
 let prestige = 0;
+let reset = 0;
 
 ResetStats()
 OnClickMoney(0, 0, 0)
@@ -14,16 +15,20 @@ OnClickUltra(0, 0, 0)
 OnClickPrestige(0, 0)
 
 function ResetStats() {
-    money = 0;
-    multiplier = 0;
-    rebirth = 0;
-    ultrarebirth = 0;
-    prestige = 0;
-    document.getElementById("moneyCount").innerHTML = money;
-    document.getElementById("multiplierCount").innerHTML = multiplier;
-    document.getElementById("rebirthCount").innerHTML = rebirth;
-    document.getElementById("ultraCount").innerHTML = ultrarebirth;
-    document.getElementById("prestigeCount").innerHTML = prestige;
+    reset = reset + 1
+    if (reset > 1) {
+        money = 0;
+        multiplier = 0;
+        rebirth = 0;
+        ultrarebirth = 0;
+        prestige = 0;
+        document.getElementById("moneyCount").innerHTML = money;
+        document.getElementById("multiplierCount").innerHTML = multiplier;
+        document.getElementById("rebirthCount").innerHTML = rebirth;
+        document.getElementById("ultraCount").innerHTML = ultrarebirth;
+        document.getElementById("prestigeCount").innerHTML = prestige;
+        reset = 0;
+    }
 }
 
 function OnClickMoney(amount, requires, requires2) {
