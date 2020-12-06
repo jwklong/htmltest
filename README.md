@@ -6,9 +6,9 @@
 
 #### wow the menu in the main page is now look good, oh the readme has now converted to actual markdown instead of me typing some html code, kinda. prestige prob coming in **v1.5.0**
 
-### v1.5.0-test2
+### v1.5.0-rc1
 
-#### new round stuff, oh cool nice more background i guess so im just gonna keep typing stuff also do people even look at this or am i just making this so i can do code hmmmm
+#### i didn't forget about this ok so new menu new secret new design ok is that a good release candidate update
 
 ##### *jwklong.github.io/htmltest*
 

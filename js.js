@@ -93,3 +93,18 @@ function OnClickPrestige(amount, cost) {
         document.getElementById("moneyCount").innerHTML = money;
     }
 }
+
+function dev() {
+    console.log("loading developer stuff")
+    money = 1e+69;
+    multiplier = 1e+69;
+    rebirth = 1e+69;
+    ultrarebirth = 1e+69;
+    prestige = 1e+69;
+    document.getElementById("prestigeCount").innerHTML = prestige;
+    document.getElementById("ultraCount").innerHTML = ultrarebirth;
+    document.getElementById("rebirthCount").innerHTML = rebirth;
+    document.getElementById("multiplierCount").innerHTML = multiplier;
+    document.getElementById("moneyCount").innerHTML = money;
+    console.log("developer stuff activated")
+}
