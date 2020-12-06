@@ -23,7 +23,7 @@ img {
 #money {
     background-color: lime;
     padding: 5px;
-    margin: 1px;
+    margin: 10px;
     border-radius: 10px;
     border: 2px solid green;
 }
@@ -31,7 +31,7 @@ img {
 #multiplier {
     background-color: red;
     padding: 5px;
-    margin: 1px;
+    margin: 10px;
     border-radius: 10px;
     border: 2px solid maroon;
 }
@@ -39,7 +39,7 @@ img {
 #rebirth {
     background-color: blue;
     padding: 5px;
-    margin: 1px;
+    margin: 10px;
     border-radius: 10px;
     border: 2px solid darkblue;
 }
@@ -47,7 +47,7 @@ img {
 #ureb {
     background-color: hotpink;
     padding: 5px;
-    margin: 1px;
+    margin: 10px;
     border-radius: 10px;
     border: 2px solid deeppink;
 }
@@ -55,7 +55,7 @@ img {
 #prestige {
     background-color: #ffa600;
     padding: 5px;
-    margin: 1px;
+    margin: 10px;
     border-radius: 10px;
     border: 2px solid #ce8600;
 }
