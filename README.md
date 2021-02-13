@@ -1,14 +1,10 @@
 # htmltest
 
-## le html testing website (also includes js)
+## hi this is a example webpage, use the code if u want i guess.
 
-### v1.4.3
+### v1.5.0
 
-#### wow the menu in the main page is now look good, oh the readme has now converted to actual markdown instead of me typing some html code, kinda. prestige prob coming in **v1.5.0**
-
-### v1.5.0-rc1
-
-#### i didn't forget about this ok so new menu new secret new design ok is that a good release candidate update
+#### whew i nearly forgot this existed. so here's v1.5.0 with credits n stuff
 
 ##### *jwklong.github.io/htmltest*
 

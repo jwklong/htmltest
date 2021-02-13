@@ -7,7 +7,6 @@ let ultrarebirth = 0;
 let prestige = 0;
 let reset = 0;
 
-ResetStats()
 OnClickMoney(0, 0, 0)
 OnClickMultiplier(0, 0, 0)
 OnClickRebirth(0, 0, 0)
@@ -78,8 +77,7 @@ function OnClickUltra(amount, cost, requires) {
         }
     }
 }
-
-function OnClickPrestige(amount, cost) {
+function OnClickUltra(amount, cost, required) {
     if (cost <= ultrarebirth) {
         prestige = prestige + amount;
         ultrarebirth = 0
