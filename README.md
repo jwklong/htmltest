@@ -1,6 +1,6 @@
 # htmltest
 
-## hi this is a example webpage, use the code if u want i guess.
+## hi this is a example webpage, use the code if u want i guess
 
 ### v1.5.0
 

@@ -6,12 +6,21 @@ let rebirth = 0;
 let ultrarebirth = 0;
 let prestige = 0;
 let reset = 0;
+dev();
+ResetStats();
+OnClickMoney(0, 0, 0);
+OnClickMultiplier(0, 0, 0);
+OnClickRebirth(0, 0, 0);
+OnClickUltra(0, 0, 0);
+OnClickPrestige(0, 0);
 
-OnClickMoney(0, 0, 0)
-OnClickMultiplier(0, 0, 0)
-OnClickRebirth(0, 0, 0)
-OnClickUltra(0, 0, 0)
-OnClickPrestige(0, 0)
+function Refresh() {
+    document.getElementById("moneyCount").innerHTML = money;
+    document.getElementById("multiplierCount").innerHTML = multiplier;
+    document.getElementById("rebirthCount").innerHTML = rebirth;
+    document.getElementById("ultraCount").innerHTML = ultrarebirth;
+    document.getElementById("prestigeCount").innerHTML = prestige;
+}
 
 function ResetStats() {
     reset = reset + 1
@@ -21,11 +30,7 @@ function ResetStats() {
         rebirth = 0;
         ultrarebirth = 0;
         prestige = 0;
-        document.getElementById("moneyCount").innerHTML = money;
-        document.getElementById("multiplierCount").innerHTML = multiplier;
-        document.getElementById("rebirthCount").innerHTML = rebirth;
-        document.getElementById("ultraCount").innerHTML = ultrarebirth;
-        document.getElementById("prestigeCount").innerHTML = prestige;
+        Refresh()
         reset = 0;
     }
 }
@@ -34,7 +39,7 @@ function OnClickMoney(amount, requires, requires2) {
     if (requires2 <= rebirth) {
         if (requires <= multiplier) {
             money = money + amount * (multiplier + (1 * ((prestige * 3) + 1)));
-            document.getElementById("moneyCount").innerHTML = money;
+            Refresh()
         }
     }
 }
@@ -44,8 +49,7 @@ function OnClickMultiplier(amount, cost, requires) {
         if (cost <= money) {
             multiplier = multiplier + amount * (rebirth + 1);
             money = money - cost
-            document.getElementById("multiplierCount").innerHTML = multiplier;
-            document.getElementById("moneyCount").innerHTML = money;
+            Refresh()
         }
     }
 }
@@ -56,9 +60,7 @@ function OnClickRebirth(amount, cost, requires) {
             rebirth = rebirth + amount * ((ultrarebirth * 2) + 1)
             multiplier = 0
             money = 0
-            document.getElementById("rebirthCount").innerHTML = rebirth;
-            document.getElementById("multiplierCount").innerHTML = multiplier;
-            document.getElementById("moneyCount").innerHTML = money;
+            Refresh()
         }
     }
 }
@@ -70,25 +72,19 @@ function OnClickUltra(amount, cost, requires) {
             rebirth = 0
             multiplier = 0
             money = 0
-            document.getElementById("ultraCount").innerHTML = ultrarebirth;
-            document.getElementById("rebirthCount").innerHTML = rebirth;
-            document.getElementById("multiplierCount").innerHTML = multiplier;
-            document.getElementById("moneyCount").innerHTML = money;
+            Refresh
         }
     }
 }
-function OnClickUltra(amount, cost, required) {
+function OnClickPrestige(amount, cost) {
     if (cost <= ultrarebirth) {
         prestige = prestige + amount;
         ultrarebirth = 0
         rebirth = 0
+        function ResetStats() {
         multiplier = 0
         money = 0
-        document.getElementById("prestigeCount").innerHTML = prestige;
-        document.getElementById("ultraCount").innerHTML = ultrarebirth;
-        document.getElementById("rebirthCount").innerHTML = rebirth;
-        document.getElementById("multiplierCount").innerHTML = multiplier;
-        document.getElementById("moneyCount").innerHTML = money;
+        Refresh()
     }
 }
 
@@ -99,10 +95,6 @@ function dev() {
     rebirth = 1e+69;
     ultrarebirth = 1e+69;
     prestige = 1e+69;
-    document.getElementById("prestigeCount").innerHTML = prestige;
-    document.getElementById("ultraCount").innerHTML = ultrarebirth;
-    document.getElementById("rebirthCount").innerHTML = rebirth;
-    document.getElementById("multiplierCount").innerHTML = multiplier;
-    document.getElementById("moneyCount").innerHTML = money;
+    Refresh()
     console.log("developer stuff activated")
 }
