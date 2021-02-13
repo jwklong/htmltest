@@ -1,0 +1,43 @@
+﻿body {
+    font-family: Raleway;
+    background-color: black;
+    color: #dfdfdf;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 50%;
+    border-radius: 10px;
+    border: 5px solid black;
+}
+
+a {
+    border-left: 5px solid black;
+    border-right: 5px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+
+a:active {
+    color: black;
+}
