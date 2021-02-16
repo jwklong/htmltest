@@ -81,7 +81,7 @@ function OnClickPrestige(amount, cost) {
         prestige = prestige + amount;
         ultrarebirth = 0
         rebirth = 0
-        function ResetStats() {
+        function ResetStats()
         multiplier = 0
         money = 0
         Refresh()
