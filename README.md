@@ -6,7 +6,7 @@
 
 #### whew i nearly forgot this existed. so here's v1.5.0 with credits n stuff
 
-##### *jwklong.com*
+##### *jwklong.github.io/htmltest*
 
 [![CodeFactor](https://www.codefactor.io/repository/github/jwklong/htmltest/badge)](https://www.codefactor.io/repository/github/jwklong/htmltest)
 [![Gitter](https://badges.gitter.im/SmolProjects/html-test.svg)](https://gitter.im/SmolProjects/html-test?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
