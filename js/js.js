@@ -1,11 +1,11 @@
 // this is the main js file for js.html, if you want to add more to the JS test edit the js here.
 
-var money = 0;
-var multiplier = 0;
-var rebirth = 0;
-var ultrarebirth = 0;
-var prestige = 0;
-var reset = 0;
+let money = 0;
+let multiplier = 0;
+let rebirth = 0;
+let ultrarebirth = 0;
+let prestige = 0;
+let reset = 0;
 ResetStats(true);
 OnClickMoney(0, 0, 0);
 OnClickMultiplier(0, 0, 0);
