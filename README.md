@@ -10,6 +10,6 @@
 
 ## hi this is a example webpage, use the code if u want i guess
 
-### v1.5.0
+### v1.5.1
 
-#### whew i nearly forgot this existed. so here's v1.5.0 with credits n stuff
+#### its bug fixing time. credits is no longer a void which is cool and i fixed all of the errors in js test (the thing in console is something i cant fix) and now everything is in f o l d e r s
