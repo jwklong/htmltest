@@ -6,6 +6,7 @@ let rebirth = 0;
 let ultrarebirth = 0;
 let prestige = 0;
 let reset = 0;
+dev(1)
 ResetStats(true);
 OnClickMoney(0, 0, 0);
 OnClickMultiplier(0, 0, 0);
@@ -23,7 +24,7 @@ function Refresh() {
 
 function ResetStats(nope) {
     reset = reset + 1;
-    if (reset > 1) or (nope = true); {
+    if (reset > 1) {
         money = 0;
         multiplier = 0;
         rebirth = 0;
@@ -53,17 +54,6 @@ function OnClickMultiplier(amount, cost, requires) {
     }
 }
 
-function OnClickRebirth(amount, cost, requires) {
-    if (requires <= ultrarebirth) {
-        if (cost <= multiplier) {
-            rebirth = rebirth + amount * ((ultrarebirth * 2) + 1);
-            multiplier = 0;
-            money = 0;
-            Refresh();
-        }
-    }
-}
-
 function OnClickUltra(amount, cost, requires) {
     if (requires <= prestige) {
         if (cost <= rebirth) {
@@ -73,26 +63,11 @@ function OnClickUltra(amount, cost, requires) {
             money = 0;
             Refresh();
         }
-    }
-}
-function OnClickPrestige(amount, cost) {
-    if (cost <= ultrarebirth) {
-        prestige = prestige + amount;
-        ultrarebirth = 0;
-        rebirth = 0;
-        multiplier = 0;
-        money = 0;
-        Refresh();
-    }
+    } 
 }
 
-function dev() {
-    console.log("loading developer stuff");
-    money = 1e+69;
-    multiplier = 1e+69;
-    rebirth = 1e+69;
-    ultrarebirth = 1e+69;
-    prestige = 1e+69;
-    Refresh();
-    console.log("developer stuff activated");
-}
+function dev(no) {
+    if (no = "howdidyoufindit") {
+        console.log("huh i guess you found it")
+    }
+} 
