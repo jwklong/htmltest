@@ -7,7 +7,7 @@ let ultrarebirth = 0;
 let prestige = 0;
 let reset = 0;
 dev(1)
-ResetStats(true);
+ResetStats();
 OnClickMoney(0, 0, 0);
 OnClickMultiplier(0, 0, 0);
 OnClickRebirth(0, 0, 0);
@@ -22,7 +22,7 @@ function Refresh() {
     document.getElementById("prestigeCount").innerHTML = prestige;
 }
 
-function ResetStats(nope) {
+function ResetStats() {
     reset = reset + 1;
     if (reset > 1) {
         money = 0;
