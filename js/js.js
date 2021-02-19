@@ -67,7 +67,7 @@ function OnClickUltra(amount, cost, requires) {
 }
 
 function dev(no) {
-    if (no = "howdidyoufindit") {
+    if (no == "howdidyoufindit") {
         console.log("huh i guess you found it")
     }
 } 
