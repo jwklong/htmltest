@@ -57,7 +57,7 @@ function OnClickMultiplier(amount, cost, requires) {
 
 function OnClickRebirth(amount, cost, requires) {
     if (requires <= ultrarebirth) {
-        if (cost <= multiplier) { 
+        if (cost <= multiplier) {
             rebirth = rebirth + amount * ((ultrarebirth * 2) + 1);
             multiplier = 0
             money = 0
@@ -75,7 +75,7 @@ function OnClickUltra(amount, cost, requires) {
             money = 0;
             Refresh();
         }
-    } 
+    }
 }
 
 function OnClickPrestige(amount, cost) {
@@ -91,6 +91,8 @@ function OnClickPrestige(amount, cost) {
 
 function dev(no) {
     if (no == "howdidyoufindit") {
-        console.log("huh i guess you found it")
+        prestige =+ 1
     }
 }
+
+ultrarebirth = 0
