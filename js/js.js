@@ -1,4 +1,5 @@
-// this is the main js file for js.html, if you want to add more to the JS test edit the js here.
+// this is the main js file for js.html, if you
+// want to add more to the JS test edit the js here.
 
 let money = 0;
 let multiplier = 0;
@@ -70,4 +71,4 @@ function dev(no) {
     if (no == "howdidyoufindit") {
         console.log("huh i guess you found it")
     }
-} 
+}
