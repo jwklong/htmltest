@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>JS Test</title>
+    <link rel="stylesheet" href="/css/bs.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <script src="/js/bs.js"></script>
+    <link rel="icon" href="/img/JSICON.ico">
+</head>
+<body>
+    <h1><i>JS Test</i></h1>
+    <h4>this is a game where you click stuff to get other stuff to get even more stuff.</h4>
+    <h4>you have <a id="moneyCount">0</a> coin(s), <a id="multiplierCount">0</a> multiplier, <a id="rebirthCount">0</a> rebirth(s), <a id="ultraCount">0</a> ultra rebirths and <a id="prestigeCount">0</a> prestiges.</h4>
+    <div id="buttons">
+        <h3 onclick="OnClickMoney(1, 0, 0)" id="money">click me for 1 coin</h3>
+        <h3 onclick="OnClickMoney(2, 3, 0)" id="money">click me for 2 coins (requires 3 multiplier)</h3>
+        <h3 onclick="OnClickMoney(5, 12, 0)" id="money">click me for 5 coins (requires 12 multiplier)</h3>
+        <h3 onclick="OnClickMoney(11, 40, 0)" id="money">click me for 11 coins (requires 40 multiplier)</h3>
+        <h3 onclick="OnClickMoney(25, 125, 1)" id="money">click me for 25 coins (requires 125 multiplier and 1 rebirth)</h3>
+        <h3 onclick="OnClickMoney(44, 666, 4)" id="money">click me for 44 coins (requires 666 multiplier and 4 rebirth)</h3>
+        <h3 onclick="OnClickMoney(123, 10000, 30)" id="money">click me for 123 coins (requires 10000 multiplier and 30 rebirth)</h3>
+        <h3 onclick="OnClickMultiplier(1, 25, 0)" id="multiplier">click me for 1 multiplier (cost 25 coins)</h3>
+        <h3 onclick="OnClickMultiplier(3, 100, 0)" id="multiplier">click me for 3 multiplier (cost 100 coins)</h3>
+        <h3 onclick="OnClickMultiplier(7, 350, 1)" id="multiplier">click me for 7 multiplier (cost 350 coins, requires 1 rebirth)</h3>
+        <h3 onclick="OnClickMultiplier(22, 1500, 3)" id="multiplier">click me for 22 multiplier (cost 1500 coins, requires 3 rebirth)</h3>
+        <h3 onclick="OnClickMultiplier(67, 5555, 10)" id="multiplier">click me for 67 multiplier (cost 5555 coins, requires 10 rebirth)</h3>
+        <h3 onclick="OnClickMultiplier(175, 75000, 45)" id="multiplier">click me for 175 multiplier (cost 75000 coins, requires 45 rebirth)</h3>
+        <h3 onclick="OnClickMultiplier(750, 1000000, 250)" id="multiplier">click me for 750 multiplier (cost 1M coins, requires 250 rebirth)</h3>
+        <h3 onclick="OnClickMultiplier(1666, 321000000, 1666)" id="multiplier">click me for 1666 multiplier (cost 321M coins, requires 5000 rebirth)</h3>
+        <h3 onclick="OnClickRebirth(1, 75, 0)" id="rebirth">click me for 1 rebirth (cost 75 multiplier)</h3>
+        <h3 onclick="OnClickRebirth(3, 250, 0)" id="rebirth">click me for 3 rebirth (cost 250 multiplier)</h3>
+        <h3 onclick="OnClickRebirth(7, 900, 0)" id="rebirth">click me for 7 rebirth (cost 900 multiplier)</h3>
+        <h3 onclick="OnClickRebirth(20, 3000, 0)" id="rebirth">click me for 20 rebirth (cost 3000 multiplier)</h3>
+        <h3 onclick="OnClickRebirth(65, 20000, 0)" id="rebirth">click me for 65 rebirth (cost 20000 multiplier)</h3>
+        <h3 onclick="OnClickRebirth(135, 250000, 0)" id="rebirth">click me for 135 rebirth (cost 250000 multiplier)</h3>
+        <h3 onclick="OnClickRebirth(400, 3000000, 2)" id="rebirth">click me for 400 rebirth (cost 3M multiplier, requires 2 ultra rebirth)</h3>
+        <h3 onclick="OnClickRebirth(1000, 500000000, 10)" id="rebirth">click me for 1000 rebirth (cost 500M multiplier, requires 10 ultra rebirth)</h3>
+        <h3 onclick="OnClickUltra(1, 125, 0)" id="ureb">click me for 1 ultra rebirth (cost 125 rebirths)</h3>
+        <h3 onclick="OnClickUltra(2.5, 500, 0)" id="ureb">click me for 2.5 ultra rebirth (cost 500 rebirths)</h3>
+        <h3 onclick="OnClickUltra(7.25, 3500, 0)" id="ureb">click me for 7.25 ultra rebirth (cost 3500 rebirths)</h3>
+        <h3 onclick="OnClickUltra(16, 12345, 0)" id="ureb">click me for 16 ultra rebirth (cost 12345 rebirths)</h3>
+        <h3 onclick="OnClickUltra(25, 123456, 0)" id="ureb">click me for 25 ultra rebirth (cost 123456 rebirths)</h3>
+        <h3 onclick="OnClickPrestige(0.75, 69)" id="prestige">click me for 0.75 prestige (cost 69 ultra rebirths)</h3>
+        <div id="indexborder">
+            <h2 id="index"><i><b>stat index</b></i></h2>
+            <h3 id="money">money - u can buy stuff with it</h3>
+            <h3 id="multiplier">mutliplier - multiplies money by 2, what the name says</h3>
+            <h3 id="rebirth">rebirth - multiplies multiplier by 2, multiply multiply</h3>
+            <h3 id="ureb">ultra rebirth - multiplies rebirth by 3, basicly a rebirth that cost rebirths</h3>
+            <h3 id="prestige">prestige - multiplies ultra rebirth by 2.5, multiplies money by 4</h3>
+        </div>
+        <h3 onclick="ResetStats()" id="multiplier">reset stats (WARNING: THIS WILL RESET ALL YOUR STATS, NO GOING BACK! btw u need to double click)</h3>
+    </div>
+    <h4><a href="../js.html">go back to JS Test</a></h4>
+</body>
+</html>

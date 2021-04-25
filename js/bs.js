@@ -95,14 +95,4 @@ function dev(no) {
     }
 }
 
-function pog(whatudoing) {
-    if (whatudoing == "you just got COCONUT MALLED  SHARE THIS TO ALL YOUR FRIENDS TO TOTALLY COCONUT MALL THEM") {
-        ultrarebirth = 9999999999999;
-        rebirth = 9999999999999;
-        multiplier = 9999999999999;
-        money = 9999999999999;
-        Refresh();
-    }
-}
-
 ultrarebirth = 0

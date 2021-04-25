@@ -1,0 +1,110 @@
+﻿body {
+    font-family: Raleway;
+    background-color: #ff4627;
+    color: white;
+}
+
+h1, h2, h3, h4, p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 5px auto;
+    width: 50%;
+    border-radius: 10px;
+    border: 5px solid #800000;
+    padding: 5px;
+}
+
+#money {
+    background-color: lime;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid green;
+}
+
+#multiplier {
+    background-color: red;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid maroon;
+}
+
+#rebirth {
+    background-color: blue;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid darkblue;
+}
+
+#ureb {
+    background-color: hotpink;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid deeppink;
+}
+
+#prestige {
+    background-color: #ffa600;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #ce8600;
+}
+
+#buttons {
+    background-color: #500000;
+    border: 1px solid #500000;
+    border-radius: 10px;
+    padding: 5px;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#index {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 5px solid #800000;
+    border-radius: 10px;
+    background-color: #aa2915
+}
+
+#indexborder {
+    margin: 5px;
+    padding: 10px;
+}
+
+a {
+    border-left: 5px solid #800000;
+    border-right: 5px solid #800000;
+    padding: 5px;
+}
+
+a:link {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+a:active {
+    color: white;
+}
+
+#nonlink {
+    border: 1px solid #ffffff00;
+}

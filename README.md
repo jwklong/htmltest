@@ -10,10 +10,7 @@
 
 ## hi this is a example webpage, use the code if u want i guess
 
-### v1.5.1
+### v1.5.2
 
-#### its bug fixing time. credits is no longer a void which is cool and i fixed all of the errors in js test (the thing in console is something i cant fix) and now everything is in f o l d e r s
+#### i just added a js-test menu so yeah i guess its cool
 
-### v1.5.2-rc1
-
-#### small thing for the next update. i just fixed some more bugs yeah
