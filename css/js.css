@@ -17,7 +17,7 @@ img {
     padding: 5px;
 }
 
-#money {
+#complete {
     background-color: lime;
     padding: 5px;
     margin: 10px;
@@ -25,62 +25,12 @@ img {
     border: 2px solid green;
 }
 
-#multiplier {
-    background-color: red;
+#wip {
+    background-color: yellow;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
-    border: 2px solid maroon;
-}
-
-#rebirth {
-    background-color: blue;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 2px solid darkblue;
-}
-
-#ureb {
-    background-color: hotpink;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 2px solid deeppink;
-}
-
-#prestige {
-    background-color: #ffa600;
-    padding: 5px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 2px solid #ce8600;
-}
-
-#buttons {
-    background-color: #500000;
-    border: 1px solid #500000;
-    border-radius: 10px;
-    padding: 5px;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-
-#index {
-    padding: 5px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border: 5px solid #800000;
-    border-radius: 10px;
-    background-color: #aa2915
-}
-
-#indexborder {
-    margin: 5px;
-    padding: 10px;
+    border: 2px solid rgb(255, 174, 0);
 }
 
 a {
