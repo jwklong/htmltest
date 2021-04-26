@@ -10,7 +10,7 @@ let reset = 0;
 
 function Refresh() {
     document.getElementById("moneyCount").innerHTML = money;
-    document.getElementById("multiplierCount").innerHTML = multiplier
+    document.getElementById("multiplierCount").innerHTML = multiplier;
     document.getElementById("rebirthCount").innerHTML = rebirth;
     document.getElementById("ultraCount").innerHTML = ultrarebirth;
     document.getElementById("prestigeCount").innerHTML = prestige;

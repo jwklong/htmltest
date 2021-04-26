@@ -1,6 +1,6 @@
 ﻿body {
     font-family: Raleway;
-    background-color: #2BADFF;
+    background-color: #2badff;
     color: white;
 }
 
@@ -55,5 +55,5 @@ a:active {
 }
 
 #nonlink {
-    border: 1px solid #ffffff00;
+    border: 1px solid #fff0;
 }
