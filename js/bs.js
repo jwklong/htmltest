@@ -1,5 +1,5 @@
-// this is the main js file for js.html, if you
-// want to add more to the JS test edit the js here.
+// this is the main js file for bs.html, if you
+// want to add more to Button Simulator edit the js here.
 
 let money = 0;
 let multiplier = 0;
@@ -7,17 +7,10 @@ let rebirth = 0;
 let ultrarebirth = 0;
 let prestige = 0;
 let reset = 0;
-dev(1)
-ResetStats();
-OnClickMoney(0, 0, 0);
-OnClickMultiplier(0, 0, 0);
-OnClickRebirth(0, 0, 0);
-OnClickUltra(0, 0, 0);
-OnClickPrestige(0, 0);
 
 function Refresh() {
     document.getElementById("moneyCount").innerHTML = money;
-    document.getElementById("multiplierCount").innerHTML = multiplier
+    document.getElementById("multiplierCount").innerHTML = multiplier;
     document.getElementById("rebirthCount").innerHTML = rebirth;
     document.getElementById("ultraCount").innerHTML = ultrarebirth;
     document.getElementById("prestigeCount").innerHTML = prestige;
@@ -59,8 +52,14 @@ function OnClickRebirth(amount, cost, requires) {
     if (requires <= ultrarebirth) {
         if (cost <= multiplier) {
             rebirth = rebirth + amount * ((ultrarebirth * 2) + 1);
-            multiplier = 0
-            money = 0
+            multiplier = 0;
+            money = 0;dev(1);
+            ResetStats();
+            OnClickMoney(0, 0, 0);
+            OnClickMultiplier(0, 0, 0);
+            OnClickRebirth(0, 0, 0);
+            OnClickUltra(0, 0, 0);
+            OnClickPrestige(0, 0);
             Refresh();
         }
     }
@@ -80,8 +79,8 @@ function OnClickUltra(amount, cost, requires) {
 
 function OnClickPrestige(amount, cost) {
     if (cost <= ultrarebirth) {
-        prestige = prestige + amount
-        ultrarebirth = 0
+        prestige = prestige + amount;
+        ultrarebirth = 0;
         rebirth = 0;
         multiplier = 0;
         money = 0;
@@ -90,9 +89,14 @@ function OnClickPrestige(amount, cost) {
 }
 
 function dev(no) {
-    if (no == "howdidyoufindit") {
-        prestige =+ 1
+    if (no === "howdidyoufindit") {
+        prestige =+ 1;
     }
 }
-
-ultrarebirth = 0
+dev(1);
+ResetStats();
+OnClickMoney(0, 0, 0);
+OnClickMultiplier(0, 0, 0);
+OnClickRebirth(0, 0, 0);
+OnClickUltra(0, 0, 0);
+OnClickPrestige(0, 0);
