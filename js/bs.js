@@ -65,7 +65,7 @@ function OnClickUltra(amount, cost, requires) {
             ultrarebirth = ultrarebirth + amount * ((prestige * 1.5) + 1);
             rebirth = 0;
             multiplier = 0;
-            money = 0;<<<<<<< dev-1.5
+            money = 0;
             Refresh();
         }
     }
@@ -89,6 +89,7 @@ function dev(no) {
 }
 dev(1);
 ResetStats();
+reset = 0;
 OnClickMoney(0, 0, 0);
 OnClickMultiplier(0, 0, 0);
 OnClickRebirth(0, 0, 0);
