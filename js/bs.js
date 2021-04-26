@@ -10,7 +10,7 @@ let reset = 0;
 
 function Refresh() {
     document.getElementById("moneyCount").innerHTML = money;
-    document.getElementById("multiplierCount").innerHTML = multiplier;
+    document.getElementById("multiplierCount").innerHTML = multiplier
     document.getElementById("rebirthCount").innerHTML = rebirth;
     document.getElementById("ultraCount").innerHTML = ultrarebirth;
     document.getElementById("prestigeCount").innerHTML = prestige;
@@ -53,13 +53,7 @@ function OnClickRebirth(amount, cost, requires) {
         if (cost <= multiplier) {
             rebirth = rebirth + amount * ((ultrarebirth * 2) + 1);
             multiplier = 0;
-            money = 0;dev(1);
-            ResetStats();
-            OnClickMoney(0, 0, 0);
-            OnClickMultiplier(0, 0, 0);
-            OnClickRebirth(0, 0, 0);
-            OnClickUltra(0, 0, 0);
-            OnClickPrestige(0, 0);
+            money = 0;
             Refresh();
         }
     }
@@ -71,7 +65,7 @@ function OnClickUltra(amount, cost, requires) {
             ultrarebirth = ultrarebirth + amount * ((prestige * 1.5) + 1);
             rebirth = 0;
             multiplier = 0;
-            money = 0;
+            money = 0;<<<<<<< dev-1.5
             Refresh();
         }
     }
