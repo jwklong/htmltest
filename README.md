@@ -10,6 +10,8 @@
 
 ## hi this is a example webpage, use the code if u want i guess
 
+##### <a href="https://github.com/jwklong/htmltest/tree/dev-1.6">dev branch<a>
+
 ### v1.5.2
 
 #### i just added a js-test menu so yeah i guess its cool
