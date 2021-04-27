@@ -7,11 +7,11 @@ let rebirth = 0;
 let ultrarebirth = 0;
 let prestige = 0;
 let reset = 0;
-money = JSON.parse(window.localStorage.getItem('money'));
-multiplier = JSON.parse(window.localStorage.getItem('multi'));
-rebirth = JSON.parse(window.localStorage.getItem('rebirth'));
-ultrarebirth = JSON.parse(window.localStorage.getItem('ultra'));
-prestige = JSON.parse(window.localStorage.getItem('prestige'));
+money = JSON.parse(window.localStorage.getItem("money"));
+multiplier = JSON.parse(window.localStorage.getItem("multi"));
+rebirth = JSON.parse(window.localStorage.getItem("rebirth"));
+ultrarebirth = JSON.parse(window.localStorage.getItem("ultra"));
+prestige = JSON.parse(window.localStorage.getItem("prestige"));
 
 function Refresh() {
     document.getElementById("moneyCount").innerHTML = money;
@@ -39,7 +39,7 @@ function OnClickMoney(amount, requires, requires2) {
     if (requires2 <= rebirth) {
         if (requires <= multiplier) {
             money = money + amount * (multiplier + (1 * ((prestige * 3) + 1)));
-            window.localStorage.setItem('money', JSON.stringify(money));
+            window.localStorage.setItem("money", JSON.stringify(money));
             Refresh();
         }
     }
@@ -50,8 +50,8 @@ function OnClickMultiplier(amount, cost, requires) {
         if (cost <= money) {
             multiplier = multiplier + amount * (rebirth + 1);
             money = money - cost;
-            window.localStorage.setItem('money', JSON.stringify(money));
-            window.localStorage.setItem('multi', JSON.stringify(multiplier));
+            window.localStorage.setItem("money", JSON.stringify(money));
+            window.localStorage.setItem("multi", JSON.stringify(multiplier));
             Refresh();
         }
     }
@@ -63,9 +63,9 @@ function OnClickRebirth(amount, cost, requires) {
             rebirth = rebirth + amount * ((ultrarebirth * 2) + 1);
             multiplier = 0;
             money = 0;
-            window.localStorage.setItem('money', JSON.stringify(money));
-            window.localStorage.setItem('multi', JSON.stringify(multiplier));
-            window.localStorage.setItem('rebirth', JSON.stringify(rebirth));
+            window.localStorage.setItem("money", JSON.stringify(money));
+            window.localStorage.setItem("multi", JSON.stringify(multiplier));
+            window.localStorage.setItem("rebirth", JSON.stringify(rebirth));
             Refresh();
         }
     }
@@ -78,10 +78,10 @@ function OnClickUltra(amount, cost, requires) {
             rebirth = 0;
             multiplier = 0;
             money = 0;
-            window.localStorage.setItem('money', JSON.stringify(money));
-            window.localStorage.setItem('multi', JSON.stringify(multiplier));
-            window.localStorage.setItem('rebirth', JSON.stringify(rebirth));
-            window.localStorage.setItem('ultra', JSON.stringify(ultrarebirth));
+            window.localStorage.setItem("money", JSON.stringify(money));
+            window.localStorage.setItem("multi", JSON.stringify(multiplier));
+            window.localStorage.setItem("rebirth", JSON.stringify(rebirth));
+            window.localStorage.setItem("ultra", JSON.stringify(ultrarebirth));
             Refresh();
         }
     }
@@ -94,11 +94,11 @@ function OnClickPrestige(amount, cost) {
         rebirth = 0;
         multiplier = 0;
         money = 0;
-        window.localStorage.setItem('money', JSON.stringify(money));
-        window.localStorage.setItem('multi', JSON.stringify(multiplier));
-        window.localStorage.setItem('rebirth', JSON.stringify(rebirth));
-        window.localStorage.setItem('ultra', JSON.stringify(ultrarebirth));
-        window.localStorage.setItem('prestige', JSON.stringify(prestige));
+        window.localStorage.setItem("money", JSON.stringify(money));
+        window.localStorage.setItem("multi", JSON.stringify(multiplier));
+        window.localStorage.setItem("rebirth", JSON.stringify(rebirth));
+        window.localStorage.setItem("ultra", JSON.stringify(ultrarebirth));
+        window.localStorage.setItem("prestige", JSON.stringify(prestige));
         Refresh();
     }
 }
@@ -116,4 +116,4 @@ OnClickMultiplier(0, 0, 0);
 OnClickRebirth(0, 0, 0);
 OnClickUltra(0, 0, 0);
 OnClickPrestige(0, 0);
-Refresh()
+Refresh();
