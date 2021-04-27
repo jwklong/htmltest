@@ -16,4 +16,8 @@
 
 #### slightly small update but yeah its cool
 
-##### <a href="https://github.com/jwklong/htmltest/tree/dev-1.6">dev branch<a>
+### v1.6.0-test1
+
+#### wow save data for button simulator thats really cool
+
+##### <i><a href="https://github.com/jwklong/htmltest/tree/dev-1.6">dev branch<a></i>
